@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.section{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genarate-pin{
+    background-color: aquamarine;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ h1{
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+.genarate-pin input{
+    height: 30px;
+    width: 100%;
+    padding-left: 5px;
+}
+.genarate-pin input:focus{
+    outline: none;
+}
+.genarate-pin button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    font-family: cursive;
+    font-size: 16px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 30px;
+    transition: 0.3s ease-in-out;
+
+}
+.genarate-pin button:hover{
+    cursor: pointer;
+    background-color: #415063;
+    height: 152px;
+    width: 152px;
+}
+
+.add-pin{
+    background-color: #222536;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-pin button#verifyButton{
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: #222536;
+    margin-top: 10px;
+    font-family: cursive;
+    cursor: pointer;
+}
+.add-pin input{
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    border: none;
+    color: #222536;
+    font-family: cursive;
+    font-size: 14px;
+    text-align: center;
+}
+.add-pin input:focus{
+    outline: none;
+}
+.all-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    width: 100%;
+}
+.all-button button{
+    padding: 10px;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #415063;
+    color: white;
+    font-family: cursive;
+
+}
+.all-button button:hover{
+    background-color: #5b6b80;
+    cursor: pointer;
+}
+#correctPin{
+    color: #222536;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+#incorrectPin{
+    color: #222536;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+
+/* Media Query Css */
+
+@media screen and (max-width: 414px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        margin: 50px 0px;
+    }
+}

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Patcher Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="section">
+        <div class="container">
+            <div class="genarate-pin">
+                <h1 id="showPin">Add Pin</h1>
+                <button type="button" id="gen-btn">Generate pin</button>
+            </div>
+            <div class="add-pin">
+                <input type="number" name="pin-added" id="pin-added" placeholder="veify Now">
+                <div class="all-button">
+                    <button type="button" class="buttons" data-num="9">9</button>
+                    <button type="button" class="buttons" data-num="8">8</button>
+                    <button type="button" class="buttons" data-num="7">7</button>
+                    <button type="button" class="buttons" data-num="6">6</button>
+                    <button type="button" class="buttons" data-num="5">5</button>
+                    <button type="button" class="buttons" data-num="4">4</button>
+                    <button type="button" class="buttons" data-num="3">3</button>
+                    <button type="button" class="buttons" data-num="2">2</button>
+                    <button type="button" class="buttons" data-num="1">1</button>
+                    <button type="button" class="buttons" data-num="0">0</button>
+                    <button type="button" id="delete">Del</button>
+                    <button type="button" id="clear">C</button>
+                </div>
+                <button type="button" id="verifyButton" value="submit">Verify Now</button>
+            </div>    
+        </div>
+        <h2 id="incorrectPin">❌Pin dose not match, please try again</h2>
+        <h2 id="correctPin">✔ Pin matched, Secrete Door is open for you.</h2>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
